@@ -1,0 +1,36 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  box-sizing: content-box;
+  padding: 20px;
+  overflow: hidden;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+#root {
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  background-color: rgb(218, 213, 213);
+  box-shadow: 0 2px 4px #a6a1a1;
+  padding: 20px;
+}
+button {
+  margin-right: 6px;
+  padding: 6px;
+  width: 60px;
+  box-shadow: 0 2px 4px #a6a1a1;
+}
