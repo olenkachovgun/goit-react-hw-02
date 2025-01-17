@@ -1,12 +1,15 @@
+import Notification from '../Notification/Notification';
+
 // eslint-disable-next-line react/prop-types
 const Feedback = ({ feedbackType, totalFeedback = 0, positiveFeedback }) => {
   {
     if (totalFeedback === 0) {
-      return <p>No feedback yet</p>;
+      return <Notification />;
     }
   }
   return (
     <div>
+      <h3>Feedback Statistics</h3>
       <ul>
         <li>Good : {feedbackType.good}</li>
         <li>Neutral : {feedbackType.neutral}</li>
