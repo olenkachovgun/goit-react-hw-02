@@ -1,6 +1,7 @@
 import './App.css';
 import Description from './components/Description/Description';
 import Feedback from './components/Feedback/Feedback';
+import Notification from './components/Notification/Notification';
 import Options from './components/Options/Options';
 import { useState, useEffect } from 'react';
 
@@ -52,11 +53,15 @@ const App = () => {
         totalFeedback={totalFeedback}
         resetFeedback={resetFeedback}
       />
-      <Feedback
-        feedbackType={feedbackType}
-        totalFeedback={totalFeedback}
-        positiveFeedback={positiveFeedback}
-      />
+      {totalFeedback > 0 ? (
+        <Feedback
+          feedbackType={feedbackType}
+          totalFeedback={totalFeedback}
+          positiveFeedback={positiveFeedback}
+        />
+      ) : (
+        <Notification />
+      )}
     </div>
   );
 };
